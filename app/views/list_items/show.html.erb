@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+<h1><%= @name %> this your list</h1>
+
+<p>
+  <strong>Item:</strong>
+  <%= @list_item.item %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @list_item.priority_id %>
+</p>
+
+<%= link_to 'Edit', edit_list_item_path(@list_item) %> |
+<%= link_to 'Back', list_items_path %>
